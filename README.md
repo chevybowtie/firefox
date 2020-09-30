@@ -8,8 +8,8 @@ See more about running GUI apps in Docker containers:
 
 # X server: 
 You will need an X Server for the GUI to be visible. Here are good candidates
-* https://sourceforge.net/projects/vcxsrv/  (Windows)
-* https://www.xquartz.org/ (MacOS)
+* https://sourceforge.net/projects/vcxsrv/  (Windows, accept all installation defaults)
+* https://www.xquartz.org/ (MacOS, untested myself)
 
 
 ## USE

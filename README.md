@@ -34,6 +34,13 @@ WINDOWS HOST RUN:
 $ docker run --rm -ti --net=host -e DISPLAY=host.docker.internal:0 chevybowtie/firefox:latest
 ```
 
+if you want to mount your host system into the image, use `-v` volume flags:
+```
+		-v "${HOME}/.firefox/cache:/root/.cache/mozilla" \
+		-v "${HOME}/.firefox/mozilla:/root/.mozilla" \
+		-v "${HOME}/Downloads:/root/Downloads" \
+```
+
 LUNUX HOST RUN: 
 ```
 $ docker run --rm -ti --net=host -e DISPLAY=:0 chevybowtie/firefox:latest

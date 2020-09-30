@@ -27,7 +27,8 @@ ENV LANG en-US
 
 COPY local.conf /etc/fonts/local.conf
 
-RUN echo 'pref("browser.tabs.remote.autostart", false);' >> /etc/firefox/syspref.js
+RUN echo 'pref("app.update.service.enabled", false);' >> /etc/firefox/syspref.js
+RUN echo 'pref("browser.backspace_action", 1);' >> /etc/firefox/syspref.js
 
 COPY entrypoint.sh /usr/bin/startfirefox
 

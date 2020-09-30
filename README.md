@@ -13,6 +13,15 @@ You will need an X Server for the GUI to be visible. Here are good candidates
 
 
 ## USE
+CLONE:
+```
+$ git clone https://github.com/chevybowtie/firefox.git
+```
+
+EDIT:
+You will want to edit your prefrences so the container will start up in the desired state. Edit the `Dockerfile` to include your own.
+* https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/A_brief_guide_to_Mozilla_preferences
+
 BUILD: 
 ```
 $ docker build . -t chevybowtie/firefox:latest
